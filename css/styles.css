@@ -247,6 +247,47 @@ strong  { color: var(--text); }
   box-shadow: var(--shadow-xs);
 }
 
+.acuden-card {
+  padding: 1.5rem;
+}
+
+.acuden-grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.acuden-media {
+  max-width: 24rem;
+  margin-inline: auto;
+}
+
+.acuden-media img {
+  width: 100%;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.acuden-copy .section-desc {
+  margin-bottom: 1.1rem;
+}
+
+.acuden-note {
+  margin: 0 0 1rem;
+  color: var(--text);
+}
+
+.acuden-inline-link {
+  color: inherit;
+  font-weight: 600;
+}
+
+.acuden-inline-link:hover {
+  color: inherit;
+  opacity: 0.75;
+}
+
 /* ==========================================================================
    4. HEADER + NAV
    ========================================================================== */
@@ -1159,6 +1200,24 @@ textarea::placeholder {
   }
 
   .summer-media {
+    order: 2;
+    max-width: none;
+  }
+
+  .acuden-card {
+    padding: 1.85rem;
+  }
+
+  .acuden-grid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+    gap: 2.75rem;
+  }
+
+  .acuden-copy {
+    order: 1;
+  }
+
+  .acuden-media {
     order: 2;
     max-width: none;
   }
