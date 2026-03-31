@@ -182,6 +182,72 @@ strong  { color: var(--text); }
 }
 
 /* ==========================================================================
+   3b. LITTLE ALIENS SUMMER CAMP
+   ========================================================================== */
+.summer-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.summer-media {
+  max-width: 29rem;
+  margin-inline: auto;
+}
+
+.summer-media img {
+  width: 100%;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.summer-copy .section-desc {
+  margin-bottom: 1.35rem;
+}
+
+.summer-label {
+  margin-bottom: 0.45rem;
+  color: var(--text);
+}
+
+.summer-points {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0 0 1.35rem;
+}
+
+.summer-points li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--text-muted);
+}
+
+.summer-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.78em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--coral);
+  transform: translateY(-50%);
+}
+
+.summer-note {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.1rem;
+  max-width: 48ch;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border-warm);
+  border-left: 3px solid var(--coral);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-xs);
+}
+
+/* ==========================================================================
    4. HEADER + NAV
    ========================================================================== */
 .site-header {
@@ -1083,6 +1149,20 @@ textarea::placeholder {
    15. RESPONSIVE — Desktop (≥ 900px)
    ========================================================================== */
 @media (min-width: 900px) {
+  .summer-grid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+    gap: 2.5rem;
+  }
+
+  .summer-copy {
+    order: 1;
+  }
+
+  .summer-media {
+    order: 2;
+    max-width: none;
+  }
+
   .hero-grid {
     max-width: 760px;
     margin-inline: auto;
