@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.preescolarlacasitadulcepr.com/sitemap.xml
+Sitemap: https://lacasitadulcepr.com/sitemap.xml
