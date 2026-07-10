@@ -2039,6 +2039,12 @@ main > .section > .container > .eyebrow {
   opacity: .62;
 }
 .hero-grid { position: relative; }
+.hero .hero-grid {
+  width: min(1320px, calc(100% - 48px));
+  max-width: 1320px;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(2.5rem, 4vw, 4.5rem);
+}
 .hero-copy { position: relative; }
 .hero .eyebrow {
   color: var(--slate);
@@ -2115,6 +2121,10 @@ main > .section > .container > .eyebrow {
 @media (max-width: 899px) {
   .hero::before { width: 24rem; height: 24rem; top: -12rem; right: -12rem; }
   .hero::after { width: 9rem; height: 9rem; }
+  .hero .hero-grid {
+    width: min(var(--container), calc(100% - 48px));
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 639px) {
@@ -2125,4 +2135,5 @@ main > .section > .container > .eyebrow {
   .hero .cta-row { align-items: stretch; }
   .hero-highlight { white-space: normal; }
   .hero-img { padding: .4rem; border-radius: calc(var(--r-lg) + .4rem); }
+  .hero .hero-grid { width: min(100% - 36px, var(--container)); }
 }
