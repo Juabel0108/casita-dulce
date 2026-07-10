@@ -1430,6 +1430,19 @@ section > .container > h2,
   column-gap: clamp(2.5rem, 6vw, 5.5rem);
   align-items: start;
 }
+#porque .trust-intro {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#porque .trust-intro > h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(2.3rem, 3.5vw, 3.5rem);
+}
+#porque .trust-intro > .section-desc { margin-bottom: 1.5rem; }
+#porque .trust-intro .trust-stat { margin-bottom: 1.75rem; }
+#porque .trust-intro .trust-photo { width: 100%; }
 #porque .eyebrow,
 #porque > .container > h2,
 #porque > .container > .section-desc { grid-column: 1; }
@@ -1443,7 +1456,7 @@ section > .container > h2,
 .trust-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 #porque .features-grid {
   grid-column: 2;
-  grid-row: 1 / span 4;
+  grid-row: auto;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
   background: var(--surface);
