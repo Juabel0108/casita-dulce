@@ -8,6 +8,20 @@ if (yearNode) {
   yearNode.textContent = String(new Date().getFullYear());
 }
 
+/* --- Anclas: reserva la altura real del encabezado y un margen de lectura --- */
+const header = document.querySelector('.site-header');
+if (header) {
+  const updateHeaderOffset = () => {
+    document.documentElement.style.setProperty('--header-offset', `${Math.ceil(header.getBoundingClientRect().height) + 12}px`);
+  };
+  updateHeaderOffset();
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(updateHeaderOffset).observe(header);
+  } else {
+    window.addEventListener('resize', updateHeaderOffset);
+  }
+}
+
 /* --- Menú móvil --- */
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
@@ -69,9 +83,31 @@ document.addEventListener('click', (e) => {
 
 /* --- Formulario → WhatsApp prellenado --- */
 document.querySelectorAll('.js-whatsapp-form').forEach((form) => {
+  const fields = form.querySelector('.whatsapp-fields');
+  const nameField = form.elements.namedItem('nombre');
+  const phoneField = form.elements.namedItem('telefono');
+
+  const validateName = () => {
+    nameField.setCustomValidity(nameField.value.trim() ? '' : 'Escribe tu nombre.');
+  };
+  const validatePhone = () => {
+    const value = phoneField.value.trim();
+    const digits = value.replace(/\D/g, '');
+    const valid = /^\+?[\d\s().-]+$/.test(value) && digits.length >= 10 && digits.length <= 15;
+    phoneField.setCustomValidity(valid ? '' : 'Escribe un teléfono de 10 a 15 dígitos; puedes incluir +, espacios, paréntesis, puntos o guiones.');
+  };
+  nameField.addEventListener('input', validateName);
+  phoneField.addEventListener('input', validatePhone);
+  form.addEventListener('reset', () => {
+    nameField.setCustomValidity('');
+    phoneField.setCustomValidity('');
+  });
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    validateName();
+    validatePhone();
     if (!form.checkValidity()) {
       form.reportValidity();
       return;
@@ -121,4 +157,7 @@ document.querySelectorAll('.js-whatsapp-form').forEach((form) => {
     form.reset();
     console.log({ event: 'form_submit', ubicacion, edad, destination: whatsappNumber, page: location.pathname });
   });
+
+  // Habilita el formulario solo después de instalar el envío seguro a WhatsApp.
+  if (fields) fields.disabled = false;
 });
