@@ -61,7 +61,7 @@ if (menuToggle && nav) {
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth >= 740) closeMenu();
+    if (window.innerWidth >= 1024) closeMenu();
   });
 }
 

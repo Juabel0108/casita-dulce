@@ -49,7 +49,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -136,11 +136,11 @@
           Menú
         </button>
         <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
-          <a href="#inicio">Inicio</a>
-          <a href="#programa">Programa</a>
+          <a href="#programa">Programas</a>
           <a href="#porque">Por qué elegirnos</a>
-          <a href="#sedes">Ubicaciones</a>
-          <a href="#contacto" class="nav-cta">Solicita orientación</a>
+          <a href="#sedes">Localidades</a>
+          <a href="#preguqntas">Preguntas frecuentes</a>
+          <a href="#contacto" class="nav-cta">Coordinar una visita</a>
         </nav>
       </div>
     </header>
@@ -150,45 +150,38 @@
 
       <!-- 1. HERO -->
       <section class="hero" aria-labelledby="hero-heading">
-        <div class="hero-bg" aria-hidden="true">
-          <span class="blob blob-1"></span>
-          <span class="blob blob-2"></span>
-        </div>
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Cuido y preescolar en Bayamón y Naranjito</p>
-            <h1 id="hero-heading">Un lugar seguro para <span class="hero-highlight">crecer, aprender</span> y sentirse en casa</h1>
-            <p class="hero-slogan"><em>Más de 30 años educando con amor</em></p>
+            <p class="eyebrow">Más de 30 años educando con amor</p>
+            <h1 id="hero-heading">Preescolar y cuido infantil en <span>Bayamón y Naranjito</span></h1>
             <p class="hero-desc">
               Acompañamos a cada niño con atención cercana, experiencias educativas y un ambiente pensado para su bienestar. Recibimos niños de <strong>6 meses hasta 7 años</strong>, con programas por etapa y cuido extendido disponible.
             </p>
-            <ul class="trust-chips" aria-label="Información destacada">
-              <li>6 meses a 7 años</li>
-              <li>Cuido hasta las 5:00pm</li>
-              <li>Aceptamos ACUDEN</li>
-            </ul>
+            <p class="hero-note"><a href="#acuden">Aceptamos ACUDEN</a><span aria-hidden="true"> · </span>Cuido hasta las 5:00pm</p>
             <div class="cta-row">
-              <a class="btn btn-primary" href="#contacto">Habla con nuestro equipo</a>
-              <a class="btn btn-outline" href="#programa">Explora los programas</a>
+              <a class="btn btn-primary" href="#contacto">Coordinar una visita <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-outline" href="#programa">Conoce nuestros programas</a>
             </div>
           </div>
-          <div class="hero-img">
-            <video
-              controls
-              playsinline
-              preload="metadata"
-              poster="images/herocasita.png"
-              aria-label="Video institucional de Preescolar La Casita Dulce en Naranjito"
-              aria-describedby="hero-video-caption"
-            >
-              <source src="Video/naranjito-preescolar-720p.m4v" type="video/mp4" />
-              Tu navegador no puede reproducir este video.
-              <a href="Video/naranjito-preescolar-720p.m4v">Abrir el video institucional</a>.
-            </video>
-            <p id="hero-video-caption" class="hero-video-caption">Conoce nuestras instalaciones, actividades y el ambiente de La Casita Dulce en Naranjito.</p>
-          </div>
+          <figure class="hero-photo">
+            <img src="images/optimized/nina-sonriendo-01-800.webp"
+              srcset="images/optimized/nina-sonriendo-01-480.webp 480w, images/optimized/nina-sonriendo-01-800.webp 800w"
+              sizes="(min-width: 1200px) 490px, (min-width: 900px) 43vw, (min-width: 600px) 440px, calc(100vw - 40px)"
+              width="800" height="1201" alt="Niña sonriendo en la ventana de una casita de juego en La Casita Dulce"
+              fetchpriority="high" decoding="async" />
+            <figcaption>Donde con dulzura se aprende</figcaption>
+          </figure>
         </div>
       </section>
+
+      <div class="trust-band" aria-label="La Casita Dulce en breve">
+        <ul class="container trust-list">
+          <li><strong>30+ años</strong><span>educando con amor</span></li>
+          <li><strong>6 meses–7 años</strong><span>acompañando cada etapa</span></li>
+          <li><strong>2 localidades</strong><span>Bayamón y Naranjito</span></li>
+          <li><strong>Aceptamos ACUDEN</strong><a href="#acuden">Orientación para familias <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
 
       <!-- 2. POR QUÉ LA CASITA DULCE -->
       <section class="section section-muted" id="porque" aria-labelledby="porque-heading">
@@ -197,15 +190,12 @@
             <p class="eyebrow">Quiénes somos</p>
             <h2 id="porque-heading">Más de 30 años cuidando y educando con dulzura</h2>
             <p class="section-desc">La Casita Dulce nació con una misión clara: crear un espacio donde cada niño se sienta seguro, amado y listo para aprender. Hoy seguimos acompañando a las familias con estructura, comunicación cercana y atención a las necesidades de cada etapa.</p>
-            <p class="trust-stat" aria-label="Más de 30 años acompañando a familias en Puerto Rico">
-              <strong>30+</strong>
-              <span>años acompañando a familias en Puerto Rico</span>
-            </p>
+            <p class="trust-motto">Un lugar seguro para crecer, aprender y sentirse en casa.</p>
             <div class="trust-photo">
               <img
                 src="images/optimized/ninos-field-day-800.webp"
                 srcset="images/optimized/ninos-field-day-480.webp 480w, images/optimized/ninos-field-day-800.webp 800w"
-                sizes="(min-width: 900px) 38vw, 100vw"
+                sizes="(min-width: 1200px) 468px, (min-width: 900px) 40vw, (min-width: 720px) 680px, calc(100vw - 40px)"
                 width="800"
                 height="534"
                 alt="Niños participando en una actividad al aire libre en La Casita Dulce"
@@ -264,6 +254,7 @@
       <!-- 3. PROGRAMA POR EDADES -->
       <section class="section" id="programa" aria-labelledby="programa-heading">
         <div class="container">
+          <p class="eyebrow">Cada etapa tiene su lugar</p>
           <h2 id="programa-heading">Programa por edades</h2>
           <p class="section-desc">
             Horario regular <strong>7:00am – 2:00pm</strong> · Cuido extendido opcional <strong>hasta 5:00pm</strong><br>
@@ -294,56 +285,10 @@
         </div>
       </section>
 
-      <!-- 4. ACTIVIDADES EXTRACURRICULARES -->
-      <section class="section section-muted" id="extracurriculares" aria-labelledby="extra-heading">
-        <div class="container">
-          <p class="eyebrow">Más allá del salón</p>
-          <h2 id="extra-heading">Actividades extracurriculares</h2>
-          <p class="section-desc">Complementamos el desarrollo integral de cada niño con experiencias que van más allá del currículo — divertidas, enriquecedoras y diseñadas para que brillen.</p>
-          <div class="extra-grid">
-            <article class="extra-card">
-              <div class="extra-img-wrap">
-                <img src="images/optimized/nina-sonriendo-02-480.webp" srcset="images/optimized/nina-sonriendo-02-480.webp 480w, images/optimized/nina-sonriendo-02-720.webp 720w" sizes="(min-width: 640px) 31vw, 92vw" width="480" height="721" alt="Niña en clases de ballet en La Casita Dulce" loading="lazy" decoding="async" />
-              </div>
-              <div class="extra-body">
-                <div class="extra-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-                </div>
-                <h3>Ballet</h3>
-                <p>Clases de ballet que desarrollan coordinación, disciplina, expresión corporal y confianza en sí mismos desde temprana edad.</p>
-              </div>
-            </article>
-            <article class="extra-card">
-              <div class="extra-img-wrap">
-                <img src="images/optimized/Actividad-navidad-grupo-480.webp" srcset="images/optimized/Actividad-navidad-grupo-480.webp 480w, images/optimized/Actividad-navidad-grupo-720.webp 720w" sizes="(min-width: 640px) 31vw, 92vw" width="480" height="320" alt="Celebración navideña en grupo en La Casita Dulce" loading="lazy" decoding="async" />
-              </div>
-              <div class="extra-body">
-                <div class="extra-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <h3>Eventos temáticos</h3>
-                <p>Celebraciones y actividades especiales a lo largo del año que crean memorias, refuerzan el aprendizaje y fortalecen el sentido de comunidad.</p>
-              </div>
-            </article>
-            <article class="extra-card">
-              <div class="extra-img-wrap">
-                <img src="images/optimized/nino-jugando-01-480.webp" srcset="images/optimized/nino-jugando-01-480.webp 480w, images/optimized/nino-jugando-01-720.webp 720w" sizes="(min-width: 640px) 31vw, 92vw" width="480" height="507" alt="Niño jugando en La Casita Dulce" loading="lazy" decoding="async" />
-              </div>
-              <div class="extra-body">
-                <div class="extra-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                </div>
-                <h3>Talleres de aprendizaje</h3>
-                <p>Talleres creativos y prácticos que refuerzan destrezas académicas de forma dinámica y divertida, complementando el desarrollo integral de cada niño.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. NUESTRAS SEDES -->
+      <!-- 4. NUESTRAS SEDES -->
       <section class="section section-muted" id="sedes" aria-labelledby="sedes-heading">
         <div class="container">
+          <p class="eyebrow">Cerca de tu familia</p>
           <h2 id="sedes-heading">Nuestras ubicaciones</h2>
           <p class="section-desc">Dos centros preescolares en Puerto Rico para familias que buscan preescolar en Bayamón o preescolar en Naranjito, con el mismo compromiso en aprendizaje, seguridad y cuido infantil.</p>
           <div class="locations-grid">
@@ -351,12 +296,13 @@
             <!-- Bayamón -->
             <article class="location-card" id="bayamon">
               <div class="location-header">
-                <h3>Centro preescolar en Bayamón</h3>
+                <h3><span>Centro preescolar en</span> Bayamón</h3>
                 <span class="location-tag">PR 00957</span>
               </div>
               <address class="location-address">
                 C. 3 C 9, Bayamón, Puerto Rico 00957
               </address>
+              <a class="location-phone" href="tel:+19399881323">939-988-1323</a>
               <ul class="location-details">
                 <li><strong>Horario:</strong> Lunes a viernes, 7:00am – 2:00pm</li>
                 <li><strong>Cuido extendido:</strong> opcional hasta 5:00pm</li>
@@ -389,12 +335,13 @@
             <!-- Naranjito -->
             <article class="location-card" id="naranjito">
               <div class="location-header">
-                <h3>Centro preescolar en Naranjito</h3>
+                <h3><span>Centro preescolar en</span> Naranjito</h3>
                 <span class="location-tag">PR 00719</span>
               </div>
               <address class="location-address">
                 PR-164 km 7.7, Naranjito, Puerto Rico 00719
               </address>
+              <a class="location-phone" href="tel:+19399881106">939-988-1106</a>
               <ul class="location-details">
                 <li><strong>Horario:</strong> Lunes a viernes, 7:00am – 2:00pm</li>
                 <li><strong>Cuido extendido:</strong> opcional hasta 5:00pm</li>
@@ -428,18 +375,79 @@
         </div>
       </section>
 
+      <!-- 5. ACTIVIDADES EXTRACURRICULARES -->
+      <section class="section section-muted" id="extracurriculares" aria-labelledby="extra-heading">
+        <div class="container">
+          <p class="eyebrow">Más allá del salón</p>
+          <h2 id="extra-heading">Actividades extracurriculares</h2>
+          <p class="section-desc">Complementamos el desarrollo integral de cada niño con experiencias que van más allá del currículo — divertidas, enriquecedoras y diseñadas para que brillen.</p>
+          <div class="extra-grid">
+            <article class="extra-card">
+              <div class="extra-img-wrap">
+                <img src="images/optimized/nina-sonriendo-02-480.webp" srcset="images/optimized/nina-sonriendo-02-480.webp 480w, images/optimized/nina-sonriendo-02-720.webp 720w" sizes="(min-width: 1200px) 540px, (min-width: 600px) 45vw, calc(100vw - 40px)" width="480" height="721" alt="Niña en clases de ballet en La Casita Dulce" loading="lazy" decoding="async" />
+              </div>
+              <div class="extra-body">
+                <h3>Ballet</h3>
+                <p>Clases de ballet que desarrollan coordinación, disciplina, expresión corporal y confianza en sí mismos desde temprana edad.</p>
+              </div>
+            </article>
+            <article class="extra-card">
+              <div class="extra-img-wrap">
+                <img src="images/optimized/Actividad-navidad-grupo-480.webp" srcset="images/optimized/Actividad-navidad-grupo-480.webp 480w, images/optimized/Actividad-navidad-grupo-720.webp 720w" sizes="(min-width: 1200px) 540px, (min-width: 600px) 45vw, calc(100vw - 40px)" width="480" height="320" alt="Celebración navideña en grupo en La Casita Dulce" loading="lazy" decoding="async" />
+              </div>
+              <div class="extra-body">
+                <h3>Eventos temáticos</h3>
+                <p>Celebraciones y actividades especiales a lo largo del año que crean memorias, refuerzan el aprendizaje y fortalecen el sentido de comunidad.</p>
+              </div>
+            </article>
+            <article class="extra-card">
+              <div class="extra-img-wrap">
+                <img src="images/optimized/nino-jugando-01-480.webp" srcset="images/optimized/nino-jugando-01-480.webp 480w, images/optimized/nino-jugando-01-720.webp 720w" sizes="(min-width: 1200px) 540px, (min-width: 600px) 45vw, calc(100vw - 40px)" width="480" height="507" alt="Niño jugando en La Casita Dulce" loading="lazy" decoding="async" />
+              </div>
+              <div class="extra-body">
+                <h3>Talleres de aprendizaje</h3>
+                <p>Talleres creativos y prácticos que refuerzan destrezas académicas de forma dinámica y divertida, complementando el desarrollo integral de cada niño.</p>
+              </div>
+            </article>
+          </div>
+          <div class="experience-film">
+            <div class="film-copy">
+              <p class="eyebrow">Una mirada a nuestro centro</p>
+              <h3>Conoce La Casita Dulce en Naranjito</h3>
+              <p>Un recorrido por nuestras instalaciones, actividades y espacios para aprender.</p>
+              <a class="text-link" href="#contacto">Coordinar una visita <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="film-media">
+              <video
+                controls
+                playsinline
+                preload="none"
+                poster="images/herocasita.png"
+                aria-label="Video institucional de Preescolar La Casita Dulce en Naranjito"
+                aria-describedby="hero-video-caption"
+              >
+                <source src="Video/naranjito-preescolar-720p.m4v" type="video/mp4" />
+                Tu navegador no puede reproducir este video.
+                <a href="Video/naranjito-preescolar-720p.m4v">Abrir el video institucional</a>.
+              </video>
+              <p id="hero-video-caption" class="hero-video-caption">Conoce nuestras instalaciones, actividades y el ambiente de La Casita Dulce en Naranjito.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- 6. GALERÍA -->
       <section class="section" id="galeria" aria-labelledby="galeria-heading">
         <div class="container">
           <h2 id="galeria-heading">La vida en La Casita Dulce</h2>
           <p class="section-desc">Cada momento aquí es una historia de aprendizaje, amistad y alegría. Esto es lo que verás cuando visites nuestros centros.</p>
           <div class="gallery-grid">
-            <img src="images/optimized/nina-sonriendo-01-480.webp" srcset="images/optimized/nina-sonriendo-01-480.webp 480w, images/optimized/nina-sonriendo-01-800.webp 800w" sizes="(min-width: 900px) 31vw, 46vw" width="480" height="721" alt="Niña sonriendo en el preescolar" loading="lazy" decoding="async" />
-            <img src="images/optimized/ninos-field-day-480.webp" srcset="images/optimized/ninos-field-day-480.webp 480w, images/optimized/ninos-field-day-800.webp 800w" sizes="(min-width: 900px) 31vw, 46vw" width="480" height="320" alt="Niños en actividad de Field Day en La Casita Dulce" loading="lazy" decoding="async" />
-            <img src="images/optimized/nino-pintura-02-480.webp" srcset="images/optimized/nino-pintura-02-480.webp 480w, images/optimized/nino-pintura-02-800.webp 800w" sizes="(min-width: 900px) 31vw, 46vw" width="480" height="721" alt="Niño pintando en La Casita Dulce" loading="lazy" decoding="async" />
-            <img src="images/optimized/nina-estudiando-01-480.webp" srcset="images/optimized/nina-estudiando-01-480.webp 480w, images/optimized/nina-estudiando-01-800.webp 800w" sizes="(min-width: 900px) 31vw, 46vw" width="480" height="721" alt="Niña aprendiendo en el salón" loading="lazy" decoding="async" />
-            <img src="images/optimized/nino-jugando-burbuja-closeup-480.webp" srcset="images/optimized/nino-jugando-burbuja-closeup-480.webp 480w, images/optimized/nino-jugando-burbuja-closeup-800.webp 800w" sizes="(min-width: 900px) 31vw, 46vw" width="480" height="320" alt="Niño jugando con burbujas en La Casita Dulce" loading="lazy" decoding="async" />
-            <img src="images/optimized/nina-corazon-01-480.webp" srcset="images/optimized/nina-corazon-01-480.webp 480w, images/optimized/nina-corazon-01-800.webp 800w" sizes="(min-width: 900px) 31vw, 46vw" width="480" height="320" alt="Niña feliz haciendo un corazón" loading="lazy" decoding="async" />
+            <img src="images/optimized/nina-sonriendo-01-480.webp" srcset="images/optimized/nina-sonriendo-01-480.webp 480w, images/optimized/nina-sonriendo-01-800.webp 800w" sizes="(min-width: 1200px) 376px, (min-width: 600px) 30vw, 44vw" width="480" height="721" alt="Niña sonriendo en el preescolar" loading="lazy" decoding="async" />
+            <img src="images/optimized/ninos-field-day-480.webp" srcset="images/optimized/ninos-field-day-480.webp 480w, images/optimized/ninos-field-day-800.webp 800w" sizes="(min-width: 1200px) 376px, (min-width: 600px) 30vw, 44vw" width="480" height="320" alt="Niños en actividad de Field Day en La Casita Dulce" loading="lazy" decoding="async" />
+            <img src="images/optimized/nino-pintura-02-480.webp" srcset="images/optimized/nino-pintura-02-480.webp 480w, images/optimized/nino-pintura-02-800.webp 800w" sizes="(min-width: 1200px) 376px, (min-width: 600px) 30vw, 44vw" width="480" height="721" alt="Niño pintando en La Casita Dulce" loading="lazy" decoding="async" />
+            <img src="images/optimized/nina-estudiando-01-480.webp" srcset="images/optimized/nina-estudiando-01-480.webp 480w, images/optimized/nina-estudiando-01-800.webp 800w" sizes="(min-width: 1200px) 376px, (min-width: 600px) 30vw, 44vw" width="480" height="721" alt="Niña aprendiendo en el salón" loading="lazy" decoding="async" />
+            <img src="images/optimized/nino-jugando-burbuja-closeup-480.webp" srcset="images/optimized/nino-jugando-burbuja-closeup-480.webp 480w, images/optimized/nino-jugando-burbuja-closeup-800.webp 800w" sizes="(min-width: 1200px) 376px, (min-width: 600px) 30vw, 44vw" width="480" height="320" alt="Niño jugando con burbujas en La Casita Dulce" loading="lazy" decoding="async" />
+            <img src="images/optimized/nina-corazon-01-480.webp" srcset="images/optimized/nina-corazon-01-480.webp 480w, images/optimized/nina-corazon-01-800.webp 800w" sizes="(min-width: 1200px) 768px, (min-width: 900px) 64vw, (min-width: 600px) 30vw, calc(100vw - 40px)" width="480" height="320" alt="Niña feliz haciendo un corazón" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -453,7 +461,7 @@
                 <img
                   src="images/optimized/acuden-640.webp"
                   srcset="images/optimized/acuden-640.webp 640w, images/optimized/acuden-960.webp 960w"
-                  sizes="(min-width: 900px) 40vw, 92vw"
+                  sizes="(min-width: 1200px) 310px, (min-width: 700px) 27vw, 300px"
                   alt="Ayudas ACUDEN para preescolar en Bayamón y Naranjito Puerto Rico"
                   width="640"
                   height="304"
@@ -519,7 +527,8 @@
       <!-- 9. CONTACTO / CTA FINAL -->
       <section class="section section-contact" id="contacto" aria-labelledby="contacto-heading">
         <div class="container">
-          <h2 id="contacto-heading">Conversemos sobre el mejor programa para tu hijo</h2>
+          <p class="eyebrow">El próximo paso empieza con una conversación</p>
+          <h2 id="contacto-heading">Conoce La Casita Dulce</h2>
           <p class="section-desc">
             Selecciona la sede que te interesa y nuestro equipo te orientará por WhatsApp. También puedes llamar o coordinar una visita para conocer el centro.
           </p>
@@ -567,7 +576,7 @@
 
             <!-- Formulario WhatsApp -->
             <div class="contact-form-wrap">
-              <h3>Solicita orientación</h3>
+              <h3>Coordinar una visita</h3>
               <p>Completa estos datos para preparar tu mensaje al equipo de la sede seleccionada.</p>
               <form class="js-whatsapp-form" data-form-context="información sobre sus programas" novalidate>
                 <fieldset class="whatsapp-fields" disabled aria-label="Datos para solicitar orientación">
@@ -629,6 +638,7 @@
         <div class="footer-locations" aria-label="Teléfonos por ubicación">
           <p><strong>Bayamón</strong> <a href="tel:+19399881323">939-988-1323</a></p>
           <p><strong>Naranjito</strong> <a href="tel:+19399881106">939-988-1106</a></p>
+          <p><strong>Orientación general</strong> <a href="tel:+17879417801">787-941-7801</a></p>
         </div>
         <p class="footer-copy">© <span id="year"></span> Preescolar La Casita Dulce. Todos los derechos reservados.</p>
       </div>
