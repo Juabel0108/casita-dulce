@@ -79,3 +79,41 @@
   .local-acuden-grid > img { max-width: 250px; }
   .local-location-details { margin-top: .5rem; }
 }
+
+/* Naranjito: the confirmed institutional tour anchors the local page. */
+.local-tour-grid { display: grid; grid-template-columns: .95fr 1.15fr; gap: clamp(2rem, 4.5vw, 4rem); align-items: center; }
+.local-tour h1 { font-size: clamp(2.5rem, 4.4vw, 3.5rem); }
+.local-tour-schedule { padding-left: 1rem; border-left: 3px solid var(--rose); margin-block: 1.5rem; }
+.local-tour-schedule strong { color: var(--ink); }
+.local-tour-film { padding: 1rem; background: var(--butter); border-radius: var(--radius); min-width: 0; }
+.local-tour-film-label { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .3rem 1rem; padding: .3rem 0 1rem; font-size: .72rem; font-weight: 600; }
+.local-tour-film-label span:last-child { color: var(--muted); }
+.local-tour-film video { height: auto; border-radius: 3px; }
+.local-tour-film figcaption { padding: 1rem .2rem .25rem; font-size: .75rem; line-height: 1.7; color: var(--muted); }
+.local-life-heading { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: end; margin-bottom: 2rem; }
+.local-life-heading h2 { margin-bottom: 0; max-width: 19ch; }
+.local-life-heading > p { margin-bottom: 0; color: var(--muted); }
+.local-life-principles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-bottom: 2.5rem; }
+.local-life-principles article { border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.local-life-principles h3 { font-size: 1.2rem; }
+.local-life-principles p { font-size: .9rem; color: var(--muted); margin-bottom: 0; }
+.local-life-photos { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; }
+.local-life-photos img { width: 100%; height: clamp(260px, 30vw, 380px); object-fit: cover; border-radius: var(--radius); }
+.local-life-photos figure:last-child img { object-position: center 38%; }
+.local-life-photos figcaption { color: var(--muted); font-size: .72rem; line-height: 1.6; margin-top: .8rem; }
+@media (max-width: 899px) {
+  .local-tour-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .local-tour h1 { max-width: 20ch; }
+  .local-tour .cta-row { flex-direction: row; align-items: center; }
+  .local-tour-film { max-width: 720px; }
+  .local-life-heading { grid-template-columns: 1fr; gap: 1.25rem; }
+  .local-life-heading h2 { max-width: 24ch; }
+}
+@media (max-width: 699px) {
+  .local-tour h1 { font-size: clamp(2.1rem, 9.6vw, 2.7rem); max-width: 16ch; }
+  .local-tour .cta-row { flex-direction: column; align-items: stretch; gap: .6rem; }
+  .local-tour-film { padding: .75rem; }
+  .local-life-principles, .local-life-photos { grid-template-columns: 1fr; }
+  .local-life-principles { gap: 1.5rem; }
+  .local-life-photos img { height: auto; aspect-ratio: 4 / 3; }
+}
